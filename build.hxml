@@ -1,0 +1,5 @@
+-debug
+-D dump=pretty
+
+-cp source
+-main Main

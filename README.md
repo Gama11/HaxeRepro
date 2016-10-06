@@ -1,0 +1,1 @@
+Empty Haxe project with a VSCode `tasks.json` for all available targets. Useful for reproducing Haxe issues. 

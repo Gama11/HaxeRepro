@@ -1,0 +1,242 @@
+{
+	"version": "0.1.0",
+	"command": "haxe",
+	"args": ["build.hxml"],
+	"tasks": [
+		{
+			"taskName": "Neko",
+			"suppressTaskName": true,
+			"args": ["-neko", "export/run.n", "-cmd", "neko export/run.n"],
+			"isBuildCommand": true,
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "Flash",
+			"suppressTaskName": true,
+			"args": ["-swf", "export/run.swf", "-D", "fdb", "-cmd", "cmd /C export\\run.swf"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "JS",
+			"suppressTaskName": true,
+			"args": ["-js", "export/run.js", "-cmd", "node export/run.js"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "Python",
+			"suppressTaskName": true,
+			"args": ["-python", "export/run.py", "-cmd", "python export/run.py"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "CPP",
+			"suppressTaskName": true,
+			"args": ["-cpp", "export/cpp", "-cmd", "cmd /C export\\cpp\\Main-debug.exe"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "CPPIA",
+			"suppressTaskName": true,
+			"args": ["-cppia", "export/cppia.txt"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "AS3",
+			"suppressTaskName": true,
+			"args": ["-as3", "export/as3"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "HL",
+			"suppressTaskName": true,
+			"args": ["-hl", "export/run.c"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "Lua",
+			"suppressTaskName": true,
+			"args": ["-lua", "export/run.lua", "-cmd", "lua export/run.lua"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "PHP",
+			"suppressTaskName": true,
+			"args": ["-php", "export/php"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "Java",
+			"suppressTaskName": true,
+			"args": ["-java", "export/java", "-cmd", "java -jar export/java/Main-Debug.jar"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "CSharp",
+			"suppressTaskName": true,
+			"args": ["-cs", "export/cs", "-cmd", "cmd /C export\\cs\\bin\\Main-Debug.exe"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"taskName": "XML",
+			"suppressTaskName": true,
+			"args": ["-xml", "export/run.xml"],
+			"problemMatcher": {
+				"owner": "haxe",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+	]
+}

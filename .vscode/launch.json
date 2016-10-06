@@ -1,0 +1,11 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "flash debug",
+			"type": "fdb",
+			"request": "launch",
+			"program": "${workspaceRoot}/export/run.swf"
+		}
+	]
+}
