@@ -133,7 +133,7 @@
 		{
 			"taskName": "HL",
 			"suppressTaskName": true,
-			"args": ["-hl", "export/run.c"],
+			"args": ["-hl", "export/run.hl", "-cmd", "hl export/run.hl"],
 			"problemMatcher": {
 				"owner": "haxe",
 				"pattern": {
