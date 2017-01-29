@@ -2,10 +2,20 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "flash debug",
+			"name": "Flash",
 			"type": "fdb",
 			"request": "launch",
 			"program": "${workspaceRoot}/export/run.swf"
+		},
+		{
+			"name": "JS",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceRoot}/export/run.js",
+			"sourceMaps": true,
+			"outFiles": [
+				"${workspaceRoot}/export/*.js"
+			]
 		}
 	]
 }
