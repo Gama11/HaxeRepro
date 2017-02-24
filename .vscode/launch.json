@@ -5,6 +5,7 @@
 			"name": "Flash",
 			"type": "fdb",
 			"request": "launch",
+			"preLaunchTask": "Flash",
 			"program": "${workspaceRoot}/export/run.swf"
 		},
 		{
@@ -12,6 +13,7 @@
 			"type": "node",
 			"request": "launch",
 			"program": "${workspaceRoot}/export/run.js",
+			"preLaunchTask": "JS",
 			"sourceMaps": true,
 			"outFiles": [
 				"${workspaceRoot}/export/*.js"
