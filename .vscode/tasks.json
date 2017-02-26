@@ -61,7 +61,7 @@
 		{
 			"taskName": "Python",
 			"suppressTaskName": true,
-			"args": ["-python", "export/run.py", "-cmd", "python export/run.py"],
+			"args": ["-python", "export/run.py", "-cmd", "python3 export/run.py"],
 			"problemMatcher": {
 				"owner": "haxe",
 				"pattern": {
