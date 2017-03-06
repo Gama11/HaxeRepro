@@ -61,7 +61,7 @@
 		{
 			"taskName": "JS",
 			"suppressTaskName": true,
-			"args": ["-js", "export/run.js", "-cmd", "node export/run.js"],
+			"args": ["-js", "export/run.js", "-lib", "hxnodejs", "-cmd", "node export/run.js"],
 			"problemMatcher": {
 				"owner": "haxe",
 				"pattern": {
