@@ -89,7 +89,7 @@
 			"problemMatcher": "$haxe"
 		},
 		{
-			"taskName": "Luajit",
+			"taskName": "LuaJIT",
 			"suppressTaskName": true,
 			"args": ["-lua", "export/run.lua", "-D", "luajit", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'luajit export/run.lua'"],
 			"problemMatcher": "$haxe"
