@@ -79,7 +79,13 @@
 		{
 			"taskName": "PHP",
 			"suppressTaskName": true,
-			"args": ["-php", "export/php"],
+			"args": ["-php", "export/php", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php export/php/index.php'"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"taskName": "PHP 7",
+			"suppressTaskName": true,
+			"args": ["-php", "export/php", "-D", "php7", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php7.0 export/php/index.php'"],
 			"problemMatcher": "$haxe"
 		},
 		{
