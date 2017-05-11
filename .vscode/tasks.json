@@ -107,7 +107,7 @@
 			"problemMatcher": "$haxe"
 		},
 		{
-			"taskName": "CSharp",
+			"taskName": "C#",
 			"suppressTaskName": true,
 			"args": ["-cs", "export/cs", "-cmd", "cmd /C export\\cs\\bin\\Main-Debug.exe"],
 			"problemMatcher": "$haxe"
