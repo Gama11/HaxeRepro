@@ -59,7 +59,13 @@
 			"problemMatcher": "$haxe"
 		},
 		{
-			"taskName": "Lua",
+			"taskName": "Lua 5.1",
+			"suppressTaskName": true,
+			"args": ["-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.1 export/run.lua'"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"taskName": "Lua 5.2",
 			"suppressTaskName": true,
 			"args": ["-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.2 export/run.lua'"],
 			"problemMatcher": "$haxe"
