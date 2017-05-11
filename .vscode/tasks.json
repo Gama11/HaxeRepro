@@ -61,7 +61,7 @@
 		{
 			"taskName": "Lua",
 			"suppressTaskName": true,
-			"args": ["-lua", "export/run.lua", "-cmd", "lua export/run.lua"],
+			"args": ["-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.2 export/run.lua'"],
 			"problemMatcher": "$haxe"
 		},
 		{
