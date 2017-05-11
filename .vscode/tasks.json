@@ -53,9 +53,15 @@
 			"problemMatcher": "$haxe"
 		},
 		{
-			"taskName": "HL",
+			"taskName": "HL/JIT",
 			"suppressTaskName": true,
 			"args": ["-hl", "export/run.hl", "-cmd", "hl export/run.hl"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"taskName": "HL/Interp",
+			"suppressTaskName": true,
+			"args": ["-hl", "export/run.hl", "-D", "interp"],
 			"problemMatcher": "$haxe"
 		},
 		{
@@ -92,6 +98,12 @@
 			"taskName": "XML",
 			"suppressTaskName": true,
 			"args": ["-xml", "export/run.xml"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"taskName": "Interp",
+			"suppressTaskName": true,
+			"args": ["--interp"],
 			"problemMatcher": "$haxe"
 		}
 	]
