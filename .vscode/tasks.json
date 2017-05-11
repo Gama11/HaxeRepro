@@ -89,6 +89,12 @@
 			"problemMatcher": "$haxe"
 		},
 		{
+			"taskName": "Luajit",
+			"suppressTaskName": true,
+			"args": ["-lua", "export/run.lua", "-D", "luajit", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'luajit export/run.lua'"],
+			"problemMatcher": "$haxe"
+		},
+		{
 			"taskName": "PHP",
 			"suppressTaskName": true,
 			"args": ["-php", "export/php", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php export/php/index.php'"],
