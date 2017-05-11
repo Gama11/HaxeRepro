@@ -11,21 +11,27 @@
 			"problemMatcher": "$haxe"
 		},
 		{
-			"taskName": "Flash (build only)",
+			"taskName": "Flash",
 			"suppressTaskName": true,
-			"args": ["-swf", "export/run.swf", "-D", "fdb"],
+			"args": ["-swf", "export/run.swf", "-cmd", "cmd /C export\\run.swf"],
 			"problemMatcher": "$haxe"
 		},
 		{
-			"taskName": "Flash",
+			"taskName": "Flash (debug)",
 			"suppressTaskName": true,
-			"args": ["-swf", "export/run.swf", "-D", "fdb", "-cmd", "cmd /C export\\run.swf"],
+			"args": ["-swf", "export/run.swf", "-D", "fdb"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "JS",
 			"suppressTaskName": true,
 			"args": ["-js","export/run.js", "-lib", "hxnodejs", "-cmd", "node export/run.js"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"taskName": "JS (debug)",
+			"suppressTaskName": true,
+			"args": ["-js","export/run.js", "-lib", "hxnodejs"],
 			"problemMatcher": "$haxe"
 		},
 		{
