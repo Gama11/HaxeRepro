@@ -35,9 +35,15 @@
 			"problemMatcher": "$haxe"
 		},
 		{
-			"taskName": "CPP",
+			"taskName": "C++",
 			"suppressTaskName": true,
 			"args": ["-cpp", "export/cpp", "-cmd", "cmd /C export\\cpp\\Main-debug.exe"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"taskName": "C++ (debug)",
+			"suppressTaskName": true,
+			"args": ["-cpp", "export/cpp", "-lib", "hxcpp-debugger", "-D", "HXCPP_DEBUGGER"],
 			"problemMatcher": "$haxe"
 		},
 		{

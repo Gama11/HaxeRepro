@@ -18,6 +18,13 @@
 			"outFiles": [
 				"${workspaceRoot}/export/*.js"
 			]
+		},
+		{
+			"name": "C++",
+			"type": "hxcpp",
+			"request": "launch",
+			"preLaunchTask": "C++ (debug)",
+			"program": "${workspaceRoot}/export/cpp/Main-debug.exe"
 		}
 	]
 }
