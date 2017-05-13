@@ -1,133 +1,138 @@
 {
 	"version": "2.0.0",
 	"command": "haxe",
-	"args": ["build.hxml"],
 	"tasks": [
 		{
 			"taskName": "Neko",
 			"suppressTaskName": true,
-			"args": ["-neko", "export/run.n", "-cmd", "neko export/run.n"],
+			"args": ["build.hxml", "-neko", "export/run.n", "-cmd", "neko export/run.n"],
 			"isBuildCommand": true,
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "Flash",
 			"suppressTaskName": true,
-			"args": ["-swf", "export/run.swf", "-cmd", "cmd /C export\\run.swf"],
+			"args": ["build.hxml", "-swf", "export/run.swf", "-cmd", "cmd /C export\\run.swf"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "Flash (debug)",
 			"suppressTaskName": true,
-			"args": ["-swf", "export/run.swf", "-D", "fdb"],
+			"args": ["build.hxml", "-swf", "export/run.swf", "-D", "fdb"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "JS",
 			"suppressTaskName": true,
-			"args": ["-js","export/run.js", "-lib", "hxnodejs", "-cmd", "node export/run.js"],
+			"args": ["build.hxml", "-js","export/run.js", "-lib", "hxnodejs", "-cmd", "node export/run.js"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "JS (debug)",
 			"suppressTaskName": true,
-			"args": ["-js","export/run.js", "-lib", "hxnodejs"],
+			"args": ["build.hxml", "-js","export/run.js", "-lib", "hxnodejs"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "Python",
 			"suppressTaskName": true,
-			"args": ["-python", "export/run.py", "-cmd", "python3 export/run.py"],
+			"args": ["build.hxml", "-python", "export/run.py", "-cmd", "python3 export/run.py"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "C++",
 			"suppressTaskName": true,
-			"args": ["-cpp", "export/cpp", "-cmd", "cmd /C export\\cpp\\Main-debug.exe"],
+			"args": ["build.hxml", "-cpp", "export/cpp", "-cmd", "cmd /C export\\cpp\\Main-debug.exe"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "C++ (debug)",
 			"suppressTaskName": true,
-			"args": ["-cpp", "export/cpp", "-lib", "hxcpp-debugger", "-D", "HXCPP_DEBUGGER"],
+			"args": ["build.hxml", "-cpp", "export/cpp", "-lib", "hxcpp-debugger", "-D", "HXCPP_DEBUGGER"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "CPPIA",
 			"suppressTaskName": true,
-			"args": ["-cppia","export/cppia.txt"],
+			"args": ["build.hxml", "-cppia","export/cppia.txt"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "AS3",
 			"suppressTaskName": true,
-			"args": ["-as3", "export/as3"],
+			"args": ["build.hxml", "-as3", "export/as3"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "HL/JIT",
 			"suppressTaskName": true,
-			"args": ["-hl", "export/run.hl", "-cmd", "hl export/run.hl"],
+			"args": ["build.hxml", "-hl", "export/run.hl", "-cmd", "hl export/run.hl"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "HL/Interp",
 			"suppressTaskName": true,
-			"args": ["-hl", "export/run.hl", "-D", "interp"],
+			"args": ["build.hxml", "-hl", "export/run.hl", "-D", "interp"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "Lua 5.1",
 			"suppressTaskName": true,
-			"args": ["-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.1 export/run.lua'"],
+			"args": ["build.hxml", "-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.1 export/run.lua'"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "Lua 5.2",
 			"suppressTaskName": true,
-			"args": ["-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.2 export/run.lua'"],
+			"args": ["build.hxml", "-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.2 export/run.lua'"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "LuaJIT",
 			"suppressTaskName": true,
-			"args": ["-lua", "export/run.lua", "-D", "luajit", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'luajit export/run.lua'"],
+			"args": ["build.hxml", "-lua", "export/run.lua", "-D", "luajit", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'luajit export/run.lua'"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "PHP",
 			"suppressTaskName": true,
-			"args": ["-php", "export/php", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php export/php/index.php'"],
+			"args": ["build.hxml", "-php", "export/php", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php export/php/index.php'"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "PHP 7",
 			"suppressTaskName": true,
-			"args": ["-php", "export/php", "-D", "php7", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php7.0 export/php/index.php'"],
+			"args": ["build.hxml", "-php", "export/php", "-D", "php7", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php7.0 export/php/index.php'"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "Java",
 			"suppressTaskName": true,
-			"args": ["-java", "export/java", "-cmd", "java -jar export/java/Main-Debug.jar"],
+			"args": ["build.hxml", "-java", "export/java", "-cmd", "java -jar export/java/Main-Debug.jar"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "C#",
 			"suppressTaskName": true,
-			"args": ["-cs", "export/cs", "-cmd", "cmd /C export\\cs\\bin\\Main-Debug.exe"],
+			"args": ["build.hxml", "-cs", "export/cs", "-cmd", "cmd /C export\\cs\\bin\\Main-Debug.exe"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "XML",
 			"suppressTaskName": true,
-			"args": ["-xml", "export/run.xml"],
+			"args": ["build.hxml", "-xml", "export/run.xml", "--no-output", "-js", "foo", "-D", "doc-gen"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"taskName": "Dox",
+			"suppressTaskName": true,
+			"args": ["-cmd", "haxelib run dox -i export/run.xml -o export/dox"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"taskName": "Interp",
 			"suppressTaskName": true,
-			"args": ["--interp"],
+			"args": ["build.hxml", "--interp"],
 			"problemMatcher": "$haxe"
 		}
 	]
