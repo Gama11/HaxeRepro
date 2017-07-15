@@ -6,7 +6,10 @@
 			"taskName": "Neko",
 			"suppressTaskName": true,
 			"args": ["build.hxml", "-neko", "export/run.n", "-cmd", "neko export/run.n"],
-			"isBuildCommand": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
 			"problemMatcher": "$haxe"
 		},
 		{
