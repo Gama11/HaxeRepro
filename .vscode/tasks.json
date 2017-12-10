@@ -80,31 +80,31 @@
 		{
 			"label": "Lua 5.1",
 			"command": "haxe",
-			"args": ["build.hxml", "-lua", "export/run.lua", "-cmd", "bash.exe -c 'lua5.1 export/run.lua'"],
+			"args": ["build.hxml", "-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.1 export/run.lua'"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"label": "Lua 5.2",
 			"command": "haxe",
-			"args": ["build.hxml", "-lua", "export/run.lua", "-cmd", "bash.exe -c 'lua5.2 export/run.lua'"],
+			"args": ["build.hxml", "-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.2 export/run.lua'"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"label": "LuaJIT",
 			"command": "haxe",
-			"args": ["build.hxml", "-lua", "export/run.lua", "-D", "luajit", "-cmd", "bash.exe -c 'luajit export/run.lua'"],
+			"args": ["build.hxml", "-lua", "export/run.lua", "-D", "luajit", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'luajit export/run.lua'"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"label": "PHP",
 			"command": "haxe",
-			"args": ["build.hxml", "-php", "export/php", "-cmd", "bash.exe -c 'php export/php/index.php'"],
+			"args": ["build.hxml", "-php", "export/php", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php export/php/index.php'"],
 			"problemMatcher": "$haxe"
 		},
 		{
 			"label": "PHP 7",
 			"command": "haxe",
-			"args": ["build.hxml", "-php", "export/php", "-D", "php7", "-cmd", "bash.exe -c 'php7.0 export/php/index.php'"],
+			"args": ["build.hxml", "-php", "export/php", "-D", "php7", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php7.0 export/php/index.php'"],
 			"problemMatcher": "$haxe"
 		},
 		{
