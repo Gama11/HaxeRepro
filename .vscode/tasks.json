@@ -2,6 +2,27 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "All",
+			"dependsOn": [
+				"Neko",
+				"C++",
+				"C#",
+				"Python",
+				"JS",
+				"Python",
+				"Lua 5.1",
+				"Lua 5.2",
+				"LuaJIT",
+				"PHP ",
+				"PHP 7",
+				"Interp",
+				"HL/Interp",
+				"HL/JIT",
+				"Flash"
+			],
+			"problemMatcher": "$haxe"
+		},
+		{
 			"label": "Neko",
 			"command": "haxe",
 			"args": ["build.hxml", "-neko", "export/run.n", "-cmd", "neko export/run.n"],
