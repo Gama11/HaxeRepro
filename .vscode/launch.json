@@ -25,6 +25,14 @@
 			"request": "launch",
 			"preLaunchTask": "C++ (debug)",
 			"program": "${workspaceRoot}/export/cpp/Main-debug.exe"
+		},
+		{
+			"name": "HashLink",
+			"type": "hl",
+			"request": "launch",
+			"preLaunchTask": "HL/JIT (Debug)",
+			"hxml": "buildHL.hxml",
+			"cwd": "${workspaceRoot}"
 		}
 	]
 }

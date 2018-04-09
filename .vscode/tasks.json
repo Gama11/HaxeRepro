@@ -93,6 +93,12 @@
 			"problemMatcher": "$haxe"
 		},
 		{
+			"label": "HL/JIT (Debug)",
+			"command": "haxe",
+			"args": ["build.hxml", "-hl", "export/run.hl"],
+			"problemMatcher": "$haxe"
+		},
+		{
 			"label": "HL/Interp",
 			"command": "haxe",
 			"args": ["build.hxml", "-hl", "export/run.hl", "-D", "interp"],
