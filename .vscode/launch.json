@@ -33,6 +33,13 @@
 			"preLaunchTask": "HL/JIT (Debug)",
 			"hxml": "buildHL.hxml",
 			"cwd": "${workspaceRoot}"
+		},
+		{
+			"name": "Eval",
+			"type": "haxe-eval",
+			"request": "launch",
+			"cwd": "${workspaceRoot}",
+			"hxml": "${workspaceRoot}/buildEval.hxml"
 		}
 	]
 }
