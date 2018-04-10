@@ -93,7 +93,7 @@
 			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
 		},
 		{
-			"label": "HL/JIT (Debug)",
+			"label": "HL/JIT (debug)",
 			"command": "haxe",
 			"args": ["build.hxml", "-hl", "export/run.hl"],
 			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
