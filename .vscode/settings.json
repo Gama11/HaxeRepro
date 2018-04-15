@@ -1,0 +1,23 @@
+{
+	"haxe.displayConfigurations": [
+		["build.hxml", "-neko", "export/run.n", "-cmd", "neko export/run.n"],
+		["build.hxml", "-swf", "export/run.swf", "-cmd", "cmd /C export\\run.swf"],
+		["build.hxml", "-js","export/run.js", "-lib", "hxnodejs", "-cmd", "node export/run.js"],
+		["build.hxml", "-python", "export/run.py", "-cmd", "python3 export/run.py"],
+		["build.hxml", "-cpp", "export/cpp", "-cmd", "cmd /C export\\cpp\\Main-debug.exe"],
+		["build.hxml", "-cppia","export/cppia.txt"],
+		["build.hxml", "-as3", "export/as3"],
+		["build.hxml", "-hl", "export/run.hl", "-cmd", "hl export/run.hl"],
+		["build.hxml", "-hl", "export/run.hl", "-D", "interp"],
+		["build.hxml", "-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.1 export/run.lua'"],
+		["build.hxml", "-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.2 export/run.lua'"],
+		["build.hxml", "-lua", "export/run.lua", "-D", "luajit", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'luajit export/run.lua'"],
+		["build.hxml", "-php", "export/php", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php export/php/index.php'"],
+		["build.hxml", "-php", "export/php", "-D", "php7", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php7.0 export/php/index.php'"],
+		["build.hxml", "-java", "export/java", "-cmd", "java -jar export/java/Main-Debug.jar"],
+		["build.hxml", "-cs", "export/cs", "-cmd", "cmd /C export\\cs\\bin\\Main-Debug.exe"],
+		["build.hxml", "-xml", "export/run.xml", "--no-output", "-js", "foo", "-D", "doc-gen"],
+		["-cmd", "haxelib run dox -i export/run.xml -o export/dox"],
+		["build.hxml", "--interp"]
+	]
+}

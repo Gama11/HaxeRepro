@@ -2,167 +2,80 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "All",
-			"dependsOn": [
-				"Neko",
-				"C++",
-				"C#",
-				"Python",
-				"JS",
-				"Python",
-				"Lua 5.1",
-				"Lua 5.2",
-				"LuaJIT",
-				"PHP ",
-				"PHP 7",
-				"Interp",
-				"HL/Interp",
-				"HL/JIT",
-				"Flash"
-			],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "Neko",
-			"command": "haxe",
-			"args": ["build.hxml", "-neko", "export/run.n", "-cmd", "neko export/run.n"],
+			"type": "haxe",
+			"args": "active configuration",
 			"group": {
 				"kind": "build",
 				"isDefault": true
-			},
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "Flash",
-			"command": "haxe",
-			"args": ["build.hxml", "-swf", "export/run.swf", "-cmd", "cmd /C export\\run.swf"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
+			}
 		},
 		{
 			"label": "Flash (debug)",
 			"command": "haxe",
-			"args": ["build.hxml", "-swf", "export/run.swf", "-D", "fdb"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "JS",
-			"command": "haxe",
-			"args": ["build.hxml", "-js","export/run.js", "-lib", "hxnodejs", "-cmd", "node export/run.js"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
+			"args": [
+				"build.hxml",
+				"-swf",
+				"export/run.swf",
+				"-D",
+				"fdb"
+			],
+			"problemMatcher": [
+				"$haxe-absolute",
+				"$haxe",
+				"$haxe-error",
+				"$haxe-trace"
+			]
 		},
 		{
 			"label": "JS (debug)",
 			"command": "haxe",
-			"args": ["build.hxml", "-js","export/run.js", "-lib", "hxnodejs"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "Python",
-			"command": "haxe",
-			"args": ["build.hxml", "-python", "export/run.py", "-cmd", "python3 export/run.py"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "C++",
-			"command": "haxe",
-			"args": ["build.hxml", "-cpp", "export/cpp", "-cmd", "cmd /C export\\cpp\\Main-debug.exe"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
+			"args": [
+				"build.hxml",
+				"-js",
+				"export/run.js",
+				"-lib",
+				"hxnodejs"
+			],
+			"problemMatcher": [
+				"$haxe-absolute",
+				"$haxe",
+				"$haxe-error",
+				"$haxe-trace"
+			]
 		},
 		{
 			"label": "C++ (debug)",
 			"command": "haxe",
-			"args": ["build.hxml", "-cpp", "export/cpp", "-lib", "hxcpp-debugger", "-D", "HXCPP_DEBUGGER"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "CPPIA",
-			"command": "haxe",
-			"args": ["build.hxml", "-cppia","export/cppia.txt"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "AS3",
-			"command": "haxe",
-			"args": ["build.hxml", "-as3", "export/as3"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "HL/JIT",
-			"command": "haxe",
-			"args": ["build.hxml", "-hl", "export/run.hl", "-cmd", "hl export/run.hl"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
+			"args": [
+				"build.hxml",
+				"-cpp",
+				"export/cpp",
+				"-lib",
+				"hxcpp-debugger",
+				"-D",
+				"HXCPP_DEBUGGER"
+			],
+			"problemMatcher": [
+				"$haxe-absolute",
+				"$haxe",
+				"$haxe-error",
+				"$haxe-trace"
+			]
 		},
 		{
 			"label": "HL/JIT (debug)",
 			"command": "haxe",
-			"args": ["build.hxml", "-hl", "export/run.hl"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "HL/Interp",
-			"command": "haxe",
-			"args": ["build.hxml", "-hl", "export/run.hl", "-D", "interp"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "Lua 5.1",
-			"command": "haxe",
-			"args": ["build.hxml", "-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.1 export/run.lua'"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "Lua 5.2",
-			"command": "haxe",
-			"args": ["build.hxml", "-lua", "export/run.lua", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'lua5.2 export/run.lua'"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "LuaJIT",
-			"command": "haxe",
-			"args": ["build.hxml", "-lua", "export/run.lua", "-D", "luajit", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'luajit export/run.lua'"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "PHP",
-			"command": "haxe",
-			"args": ["build.hxml", "-php", "export/php", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php export/php/index.php'"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "PHP 7",
-			"command": "haxe",
-			"args": ["build.hxml", "-php", "export/php", "-D", "php7", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php7.0 export/php/index.php'"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "Java",
-			"command": "haxe",
-			"args": ["build.hxml", "-java", "export/java", "-cmd", "java -jar export/java/Main-Debug.jar"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "C#",
-			"command": "haxe",
-			"args": ["build.hxml", "-cs", "export/cs", "-cmd", "cmd /C export\\cs\\bin\\Main-Debug.exe"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "XML",
-			"command": "haxe",
-			"args": ["build.hxml", "-xml", "export/run.xml", "--no-output", "-js", "foo", "-D", "doc-gen"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "Dox",
-			"command": "haxe",
-			"args": ["-cmd", "haxelib run dox -i export/run.xml -o export/dox"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
-		},
-		{
-			"label": "Interp",
-			"command": "haxe",
-			"args": ["build.hxml", "--interp"],
-			"problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
+			"args": [
+				"build.hxml",
+				"-hl",
+				"export/run.hl"
+			],
+			"problemMatcher": [
+				"$haxe-absolute",
+				"$haxe",
+				"$haxe-error",
+				"$haxe-trace"
+			]
 		}
 	]
 }
