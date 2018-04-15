@@ -30,7 +30,7 @@
 			"name": "HashLink",
 			"type": "hl",
 			"request": "launch",
-			"preLaunchTask": "HL/JIT (Debug)",
+			"preLaunchTask": "HL/JIT (debug)",
 			"hxml": "buildHL.hxml",
 			"cwd": "${workspaceRoot}"
 		},
