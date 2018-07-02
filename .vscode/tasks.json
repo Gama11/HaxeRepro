@@ -51,9 +51,7 @@
 				"-cpp",
 				"export/cpp",
 				"-lib",
-				"hxcpp-debugger",
-				"-D",
-				"HXCPP_DEBUGGER"
+				"hxcpp-debug-server"
 			],
 			"problemMatcher": [
 				"$haxe-absolute",
