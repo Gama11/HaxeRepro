@@ -9,7 +9,7 @@
 			"program": "${workspaceRoot}/export/run.swf"
 		},
 		{
-			"name": "JS",
+			"name": "JavaScript",
 			"type": "node",
 			"request": "launch",
 			"program": "${workspaceRoot}/export/run.js",
@@ -27,7 +27,7 @@
 			"program": "${workspaceRoot}/export/cpp/Main-debug.exe"
 		},
 		{
-			"name": "HashLink",
+			"name": "HashLink/JIT",
 			"type": "hl",
 			"request": "launch",
 			"preLaunchTask": "HL/JIT (debug)",
@@ -35,7 +35,7 @@
 			"cwd": "${workspaceRoot}"
 		},
 		{
-			"name": "Eval",
+			"name": "Interp",
 			"type": "haxe-eval",
 			"request": "launch",
 			"cwd": "${workspaceRoot}",
