@@ -20,5 +20,8 @@
 		{"label": "JSON", "args": ["build.hxml", "--json", "export/run.json", "--no-output", "-js", "foo", "-D", "doc-gen"]},
 		{"label": "Interp", "args": ["build.hxml", "--interp"]},
 		{"label": "Dox", "args": ["-cmd", "haxelib run dox -i export/run.xml -o export/dox"]}
-	]
+	],
+	"[haxe]": {
+		"editor.formatOnSave": true
+	}
 }
