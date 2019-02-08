@@ -35,11 +35,15 @@
 			"cwd": "${workspaceRoot}"
 		},
 		{
-			"name": "Interp",
+			"name": "Interpreter",
 			"type": "haxe-eval",
 			"request": "launch",
-			"cwd": "${workspaceRoot}",
-			"hxml": "${workspaceRoot}/buildEval.hxml"
+			"args": ["${workspaceRoot}/build.hxml", "--interp"]
+		},
+		{
+			"name": "Macro",
+			"type": "haxe-eval",
+			"request": "launch"
 		}
 	]
 }
