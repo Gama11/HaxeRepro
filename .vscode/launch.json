@@ -31,14 +31,15 @@
 			"type": "hl",
 			"request": "launch",
 			"preLaunchTask": "HL/JIT (debug)",
-			"hxml": "buildHL.hxml",
-			"cwd": "${workspaceRoot}"
+			"hxml": "build.hxml",
+			"cwd": "${workspaceRoot}",
+			"program": "export/run.hl"
 		},
 		{
 			"name": "Interpreter",
 			"type": "haxe-eval",
 			"request": "launch",
-			"args": ["${workspaceRoot}/build.hxml", "--interp"]
+			"args": ["build.hxml", "--interp"]
 		},
 		{
 			"name": "Macro",
