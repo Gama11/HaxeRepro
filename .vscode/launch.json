@@ -6,17 +6,17 @@
 			"type": "fdb",
 			"request": "launch",
 			"preLaunchTask": "Flash (debug)",
-			"program": "${workspaceRoot}/export/run.swf"
+			"program": "${workspaceFolder}/export/run.swf"
 		},
 		{
 			"name": "JavaScript",
 			"type": "node",
 			"request": "launch",
-			"program": "${workspaceRoot}/export/run.js",
+			"program": "${workspaceFolder}/export/run.js",
 			"preLaunchTask": "JS (debug)",
 			"sourceMaps": true,
 			"outFiles": [
-				"${workspaceRoot}/export/*.js"
+				"${workspaceFolder}/export/*.js"
 			]
 		},
 		{
@@ -24,7 +24,7 @@
 			"type": "hxcpp",
 			"request": "launch",
 			"preLaunchTask": "C++ (debug)",
-			"program": "${workspaceRoot}/export/cpp/Main-debug.exe"
+			"program": "${workspaceFolder}/export/cpp/Main-debug.exe"
 		},
 		{
 			"name": "HashLink/JIT",
@@ -32,7 +32,7 @@
 			"request": "launch",
 			"preLaunchTask": "HL/JIT (debug)",
 			"hxml": "build.hxml",
-			"cwd": "${workspaceRoot}",
+			"cwd": "${workspaceFolder}",
 			"program": "export/run.hl"
 		},
 		{
