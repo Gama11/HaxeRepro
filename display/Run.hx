@@ -12,9 +12,13 @@ using haxe.Json;
  */
 class Run {
 	static public function main() {
-		var args = ['--connect', getPort()].concat(readDisplayArgs());
-		var c = Sys.command('haxe', args);
-		trace('Exit code: $c');
+		var connectArgs = ['--connect', getPort()];
+		var i = 0;
+		for (displayArgs in readDisplayArgs()) {
+			Sys.println('|> Executing ${++i} line of display/args.txt...');
+			Sys.command('haxe', connectArgs.concat(displayArgs));
+		}
+		Sys.println('|> Done.');
 	}
 
 	static function getPort():String {
@@ -22,18 +26,24 @@ class Run {
 		return (port == null ? '60000' : port);
 	}
 
-	static function readDisplayArgs():Array<String> {
-		var rawData = 'display/args.txt'.getContent();
-		rawData = rawData.substring(rawData.indexOf('[') + 1, rawData.lastIndexOf(']'));
+	static function readDisplayArgs():Array<Array<String>> {
+		var result = [];
+		for (rawData in 'display/args.txt'.getContent().split('\n')) {
+			rawData = rawData.substring(rawData.indexOf('[') + 1, rawData.lastIndexOf(']'));
 
-		var jsonPos = rawData.indexOf('{');
-		var args = rawData.substr(0, jsonPos).split(',');
-		var display:DisplayJson = rawData.substr(jsonPos).parse();
-		if (display.params != null && display.params.file != null) {
-			display.params.contents = display.params.file.getContent();
+			var jsonPos = rawData.indexOf('{');
+			if (jsonPos == -1) {
+				result.push(rawData.split(','));
+			} else {
+				var args = rawData.substr(0, jsonPos).split(',');
+				var display:DisplayJson = rawData.substr(jsonPos).parse();
+				if (display.params != null && display.params.file != null) {
+					display.params.contents = display.params.file.getContent();
+				}
+				result.push(args.concat([display.stringify()]));
+			}
 		}
-
-		return args.concat([display.stringify()]);
+		return result;
 	}
 }
 
