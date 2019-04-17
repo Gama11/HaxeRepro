@@ -29,7 +29,9 @@ class Run {
 		var jsonPos = rawData.indexOf('{');
 		var args = rawData.substr(0, jsonPos).split(',');
 		var display:DisplayJson = rawData.substr(jsonPos).parse();
-		display.params.contents = display.params.file.getContent();
+		if (display.params != null && display.params.file != null) {
+			display.params.contents = display.params.file.getContent();
+		}
 
 		return args.concat([display.stringify()]);
 	}
@@ -39,7 +41,9 @@ typedef DisplayJson = {
 	jsonrpc:String,
 	id:Int,
 	method:String,
-	params:{
-		file:String, contents:String, offset:String
+	?params:{
+		?file:String,
+		?contents:String,
+		?offset:Int
 	}
 }
