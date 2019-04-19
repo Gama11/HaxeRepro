@@ -1,6 +1,6 @@
 Empty Haxe project with a VSCode `tasks.json` for all available targets. Useful for reproducing Haxe issues.
 
-### How to reproduce display issues using command line
+### How to reproduce completion/compilation server issues using command line
 
 1. Add `"haxe.displayServer.arguments": ["-v"]` to your `.vscode/settings.json`
 2. Reproduce your issue in vscode
