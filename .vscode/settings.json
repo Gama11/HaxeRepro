@@ -24,5 +24,7 @@
 	"[haxe]": {
 		"editor.formatOnSave": true
 	},
-	"haxe.displayServer.arguments": ["-v"]
+	"haxe.displayServer": {
+		"arguments": ["-v"]
+	}
 }
