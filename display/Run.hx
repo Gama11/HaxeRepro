@@ -14,9 +14,9 @@ class Run {
 	static public function main() {
 		var connectArgs = ['--connect', getPort()];
 		var i = 0;
-		for (displayArgs in readDisplayArgs()) {
-			Sys.println('|> Executing ${++i} line of display/args.txt...');
-			Sys.command('haxe', connectArgs.concat(displayArgs));
+		for (set in readDisplayArgs()) {
+			Sys.println('|> Executing arguments #${++i} from display/output.log:${set.line} ...');
+			Sys.command('haxe', connectArgs.concat(set.args));
 		}
 		Sys.println('|> Done.');
 	}
@@ -26,22 +26,31 @@ class Run {
 		return (port == null ? '60000' : port);
 	}
 
-	static function readDisplayArgs():Array<Array<String>> {
+	static function readDisplayArgs():Array<{line:Int, args:Array<String>}> {
 		var result = [];
-		for (rawData in 'display/args.txt'.getContent().split('\n')) {
+		var data = 'display/output.log'.getContent().split('\n');
+		for (line in 0...data.length) {
+			var rawData = data[line];
+			if (rawData.indexOf('Processing Arguments [') != 0) {
+				continue;
+			}
 			rawData = rawData.substring(rawData.indexOf('[') + 1, rawData.lastIndexOf(']'));
 
 			var jsonPos = rawData.indexOf('{');
-			if (jsonPos == -1) {
-				result.push(rawData.split(','));
+			var args = if (jsonPos == -1) {
+				rawData.split(',');
 			} else {
 				var args = rawData.substr(0, jsonPos).split(',');
 				var display:DisplayJson = rawData.substr(jsonPos).parse();
 				if (display.params != null && display.params.file != null) {
 					display.params.contents = display.params.file.getContent();
 				}
-				result.push(args.concat([display.stringify()]));
+				args.concat([display.stringify()]);
 			}
+			result.push({
+				line: line - 1,
+				args: args
+			});
 		}
 		return result;
 	}
