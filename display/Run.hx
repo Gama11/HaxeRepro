@@ -48,7 +48,7 @@ class Run {
 				args.concat([display.stringify()]);
 			}
 			result.push({
-				line: line - 1,
+				line: line + 1,
 				args: args
 			});
 		}
