@@ -15,6 +15,7 @@
 		{"label": "PHP", "args": ["build.hxml", "-php", "export/php", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php export/php/index.php'"]},
 		{"label": "PHP 7", "args": ["build.hxml", "-php", "export/php", "-D", "php7", "-cmd", "C:\\WINDOWS\\Sysnative\\bash.exe -c 'php7.0 export/php/index.php'"]},
 		{"label": "Java", "args": ["build.hxml", "-java", "export/java", "-cmd", "java -jar export/java/Main-Debug.jar"]},
+		{"label": "JVM", "args": ["build.hxml", "-D", "jvm", "-java", "export/jvm", "-cmd", "java -jar export/jvm/Main-Debug.jar"]},
 		{"label": "C#", "args": ["build.hxml", "-cs", "export/cs", "-cmd", "cmd /C export\\cs\\bin\\Main-Debug.exe"]},
 		{"label": "XML", "args": ["build.hxml", "-xml", "export/run.xml", "--no-output", "-js", "foo", "-D", "doc-gen"]},
 		{"label": "JSON", "args": ["build.hxml", "--json", "export/run.json", "--no-output", "-js", "foo", "-D", "doc-gen"]},
