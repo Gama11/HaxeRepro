@@ -1,5 +1,5 @@
 {
-	"haxe.displayConfigurations": [
+	"haxe.configurations": [
 		{"label": "Neko", "args": ["build.hxml", "-neko", "export/run.n", "-cmd", "neko export/run.n"]},
 		{"label": "Flash", "args": ["build.hxml", "-swf", "export/run.swf", "-cmd", "cmd /C export\\run.swf"]},
 		{"label": "JavaScript", "args": ["build.hxml", "-js","export/run.js", "-lib", "hxnodejs", "-cmd", "node export/run.js"]},
