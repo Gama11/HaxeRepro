@@ -23,7 +23,8 @@
 		{"label": "Dox", "args": ["-cmd", "haxelib run dox -i export/run.xml -o export/dox"]}
 	],
 	"[haxe]": {
-		"editor.formatOnSave": true
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true
 	},
 	"haxe.displayServer": {
 		"arguments": ["-v"]
