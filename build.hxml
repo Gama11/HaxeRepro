@@ -1,5 +1,6 @@
 -debug
 -D dump=pretty
-
+-lib tink_await
+-lib tink_priority
 -cp source
 -main Main
