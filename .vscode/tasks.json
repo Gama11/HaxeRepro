@@ -11,8 +11,10 @@
 		},
 		{
 			"label": "Flash (debug)",
-			"command": "haxe",
+			"type": "shell",
+			"command": "npx",
 			"args": [
+				"haxe",
 				"build.hxml",
 				"-swf",
 				"export/run.swf",
@@ -28,8 +30,10 @@
 		},
 		{
 			"label": "JS (debug)",
-			"command": "haxe",
+			"type": "shell",
+			"command": "npx",
 			"args": [
+				"haxe",
 				"build.hxml",
 				"-js",
 				"export/run.js",
@@ -45,8 +49,10 @@
 		},
 		{
 			"label": "C++ (debug)",
-			"command": "haxe",
+			"type": "shell",
+			"command": "npx",
 			"args": [
+				"haxe",
 				"build.hxml",
 				"-cpp",
 				"export/cpp",
@@ -62,8 +68,10 @@
 		},
 		{
 			"label": "HL/JIT (debug)",
-			"command": "haxe",
+			"type": "shell",
+			"command": "npx",
 			"args": [
+				"haxe",
 				"build.hxml",
 				"-hl",
 				"export/run.hl"
