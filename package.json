@@ -1,8 +1,8 @@
 {
 	"devDependencies": {
-		"lix": "^15.8.5"
+		"lix": "^15.8.6"
 	},
 	"scripts": {
-		"postinstall": "npx lix download"
+		"postinstall": "lix download"
 	}
 }
