@@ -69,9 +69,8 @@
 		{
 			"label": "HL/JIT (debug)",
 			"type": "shell",
-			"command": "npx",
+			"command": "haxe",
 			"args": [
-				"haxe",
 				"build.hxml",
 				"-hl",
 				"export/run.hl"

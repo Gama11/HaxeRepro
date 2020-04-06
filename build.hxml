@@ -1,5 +1,3 @@
--debug
--D dump=pretty
-
+--main pack.Main
+--macro nullSafety("pack", Strict)
 -cp source
--main Main
